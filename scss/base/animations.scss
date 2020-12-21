@@ -1,16 +1,4 @@
-//-- SLIDE EFFECT FOR HAMBURGER MENU
-@keyframes slide {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(10%);
-    }
-    100% {
-        transform: translateX(0%) scale(1);
-        opacity: 1;
-    }
-};
+
 //-- ARROW EFFECT (HEADER)
 @keyframes bounce {
     0% {

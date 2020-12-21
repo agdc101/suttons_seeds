@@ -4,3 +4,18 @@ $desktop: 1200px;
 
 //--COLOURS
 $heading: rgb(11, 116, 11);
+
+//-- MIXINS
+@mixin block_center {
+    display: block;
+    margin: 0 auto;
+    @content
+};
+@mixin overlay_cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    @content;
+};

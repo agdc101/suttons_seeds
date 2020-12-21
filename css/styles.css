@@ -90,16 +90,16 @@ h2 {
   width: 75%; }
 
 .history_info img {
-  margin-top: .5rem;
-  width: 45%;
+  margin-top: 1rem;
+  width: 80%;
   max-width: 420px;
   box-shadow: 0px 0px 8px #929292; }
 
 .innovation img {
+  display: block;
+  margin: 0 auto;
   max-height: 245px;
   width: 100%;
-  margin: 0 auto;
-  display: block;
   max-width: 400px;
   box-shadow: 0px 0px 10px #646464; }
 
@@ -195,12 +195,13 @@ h2 {
   max-width: 1500px; }
 
 .header_overlay {
-  background-color: rgba(140, 180, 114, 0.45);
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(140, 180, 114, 0.45);
+  position: absolute;
   padding: 2rem 1rem; }
   @media (min-width: 1200px) {
     .header_overlay p, .header_overlay h1 {
@@ -227,9 +228,6 @@ h2 {
     @media (min-width: 1200px) {
       .header_overlay h1 {
         font-size: 4.5rem; } }
-  .header_overlay button {
-    display: block;
-    margin: 0 auto; }
 
 .about_us {
   margin: 0 auto;
@@ -271,12 +269,12 @@ h2 {
   max-width: 1460px;
   margin: 0 auto; }
   .shop .go_to_shop .shop_overlay {
-    background-color: rgba(49, 49, 49, 0.7);
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(49, 49, 49, 0.7);
     padding: 1rem 1.5rem;
     text-align: center;
     display: flex;
@@ -333,23 +331,30 @@ h2 {
   border-top: solid 1px #b9c7bb; }
   .history p {
     padding: 0rem 1rem .5rem 1rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     @media (min-width: 768px) {
       .history p {
         padding-left: 5rem;
         font-size: 1.2rem; } }
     @media (min-width: 1200px) {
       .history p {
+        margin-bottom: 1.5rem;
         font-size: 1.6rem; } }
   .history .history_info {
     display: flex;
-    justify-content: space-evenly;
     padding-bottom: 2.5rem;
+    align-items: center;
+    flex-direction: column;
     max-width: 980px;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .history .history_info {
+        flex-direction: row-reverse;
+        justify-content: space-evenly; } }
     .history .history_info span {
       font-family: 'Kaushan Script', cursive;
-      font-size: 3rem; }
+      font-size: 3.5rem; }
       @media (min-width: 768px) {
         .history .history_info span {
           font-size: 5rem; } }
@@ -381,7 +386,7 @@ h2 {
         .history .innovation p {
           font-size: 1.6rem; } }
     .history .innovation strong:nth-of-type(2) {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-family: 'Kaushan Script', cursive; }
       @media (min-width: 768px) {
         .history .innovation strong:nth-of-type(2) {
@@ -427,7 +432,10 @@ h2 {
   .join_us input {
     margin: 1rem auto;
     width: 85%;
-    max-width: 500px; }
+    max-width: 500px;
+    display: block;
+    height: 30px;
+    padding: 0 .5rem; }
     @media (min-width: 768px) {
       .join_us input {
         height: 3rem; } }
@@ -435,7 +443,7 @@ h2 {
     display: block;
     width: 50%;
     margin: .5rem auto 2rem auto;
-    max-width: 350px;
+    max-width: 360px;
     font-weight: bolder; }
     @media (min-width: 768px) {
       .join_us button {

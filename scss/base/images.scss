@@ -37,24 +37,24 @@
     width: 50%;
 }
 .who_suttons img {
-    display: block;
-    margin: 0 auto;
-    max-width: 390px;
-    width: 75%;
+    @include block_center {
+        max-width: 390px;
+        width: 75%;
+    }
 }
 .history_info img {
-    margin-top: .5rem;
-    width: 45%;
+    margin-top: 1rem;
+    width: 80%;
     max-width: 420px;
     box-shadow: 0px 0px 8px rgb(146, 146, 146);
 }
 .innovation img {
-    max-height: 245px;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    max-width: 400px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    @include block_center {
+        max-height: 245px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
 .go_to_shop img {
     height: 100%;
@@ -62,10 +62,10 @@
     max-height: 425px;
 }
 .join_us img {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 640px;
-    max-height: 400px;
-    box-shadow: 0px 0px 6px rgb(161, 161, 161);
+    @include block_center {
+        width: 90%;
+        max-width: 640px;
+        max-height: 400px;
+        box-shadow: 0px 0px 6px rgb(161, 161, 161);
+    }
 }

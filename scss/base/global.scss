@@ -1,0 +1,14 @@
+//== GLOBAL STYLES AND SECTIONS USED ACROSS THE WHOLE PROJECT
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+h2 {
+    color: $heading;
+    font-weight: bold;
+}
+

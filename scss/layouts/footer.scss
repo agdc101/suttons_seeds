@@ -1,0 +1,14 @@
+footer {
+    padding: 1rem .5rem .25rem .5rem;
+    background-color: rgb(181, 201, 181);
+    a {
+        color: white;
+        display: block;
+        line-height: 2;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

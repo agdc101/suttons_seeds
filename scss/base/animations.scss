@@ -1,0 +1,48 @@
+//-- SLIDE EFFECT FOR HAMBURGER MENU
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0%) scale(1);
+        opacity: 1;
+    }
+};
+//-- ARROW EFFECT (HEADER)
+@keyframes bounce {
+    0% {
+        transform: translateY(110%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(110%);
+    }
+}
+//-- CLASSES USED FOR INTERSECTION EFFECTS
+.slide {
+    transform: translateX(-100%);
+}
+.slide-up,
+.slide-in-right,
+.slide-in-left {
+    opacity: 0;
+    transition: transform .6s ease, opacity .6s ease-in;
+}
+.slide-up {
+    transform: translateY(40%);
+}
+.slide-in-right {
+    transform: translateX(15%);
+}
+.slide-in-left {
+    transform: translateX(-15%);
+}
+.appear {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
